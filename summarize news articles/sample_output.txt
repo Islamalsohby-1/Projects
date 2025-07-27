@@ -1,0 +1,3 @@
+Summary: European Space Agency scientists discovered a 20-kilometer-wide lake of liquid water beneath Mars' south pole using Mars Express data, suggesting potential for microbial life. Future missions are planned, but drilling challenges persist.
+Coherence check passed: TrueSummary: European Space Agency scientists discovered a 20-kilometer-wide lake of liquid water beneath Mars' south pole using Mars Express data, suggesting potential for microbial life. Future missions are planned, but drilling challenges persist.
+Coherence check passed: True

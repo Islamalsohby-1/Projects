@@ -1,0 +1,2 @@
+[2025-07-27 09:32:22] Starting scan for 192.168.1.0/24
+[2025-07-27 09:32:29] Scan completed in 6.46 seconds

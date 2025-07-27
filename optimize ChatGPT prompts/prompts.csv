@@ -1,0 +1,101 @@
+prompt,type
+"Summarize the article in 100 words.",instructional
+"Provide a concise summary of the article.",instructional
+"Summarize the article clearly in 150-200 words.",instructional
+"Give a brief overview of the article's main points.",instructional
+"Condense the article into a 100-word summary.",instructional
+"Write a short summary of the article, focusing on key points.",instructional
+"Create a 150-word summary of the article.",instructional
+"Summarize the article in a clear and concise manner.",instructional
+"Provide a 100-150 word summary of the article's core ideas.",instructional
+"Summarize the article, keeping it under 200 words.",instructional
+"What is the main idea of the article in 100 words?",question-style
+"Can you summarize the article briefly?",question-style
+"What are the key points of the article in 150 words?",question-style
+"Could you provide a short summary of the article?",question-style
+"What's the article about in 100-150 words?",question-style
+"Describe the article's main points concisely.",question-style
+"What does the article say in a nutshell?",question-style
+"Can you give a quick summary of the article?",question-style
+"What's the essence of the article in 200 words?",question-style
+"Provide a brief summary of the article's content.",question-style
+"Summarize this article: [Article text].",few-shot
+"Example: [Sample article] -> [Sample summary]. Summarize this: [Article text].",few-shot
+"Here's an example summary: [Sample summary]. Now summarize this article.",few-shot
+"Like this: [Sample summary]. Summarize the article.",few-shot
+"Follow this example: [Sample summary]. Provide a summary.",few-shot
+"Based on this: [Sample summary]. Summarize the article.",few-shot
+"Example summary: [Sample summary]. Write a summary for this article.",few-shot
+"See this: [Sample summary]. Summarize the article.",few-shot
+"Use this format: [Sample summary]. Summarize the article.",few-shot
+"Sample: [Sample summary]. Provide a summary for the article.",few-shot
+"Summarize the article in a professional tone, 100 words.",instructional
+"Write a summary of the article in a formal style.",instructional
+"Summarize the article in a conversational tone.",instructional
+"Provide a summary with a neutral tone, 150 words.",instructional
+"Summarize the article in a succinct, academic style.",instructional
+"Write a summary in a friendly tone, under 200 words.",instructional
+"Condense the article into a 100-word summary, professional tone.",instructional
+"Summarize the article in a clear, informal style.",instructional
+"Provide a concise summary in a technical tone.",instructional
+"Summarize the article in a straightforward manner, 150 words.",instructional
+"What is the article about? Answer in 100 words.",question-style
+"Can you explain the article's main points briefly?",question-style
+"What's the core idea of the article in 150 words?",question-style
+"Could you describe the article in a few sentences?",question-style
+"What are the main takeaways from the article?",question-style
+"What's the article's key message in 100-150 words?",question-style
+"Can you summarize the article in a simple way?",question-style
+"What does the article focus on, in 200 words?",question-style
+"Could you give a brief overview of the article?",question-style
+"What's the main point of the article, shortly?",question-style
+"Example: [Sample article] -> [Sample summary]. Summarize this article.",few-shot
+"Like this summary: [Sample summary]. Summarize the article.",few-shot
+"Based on: [Sample summary]. Provide a summary for this.",few-shot
+"Follow this: [Sample summary]. Summarize the article.",few-shot
+"Sample: [Sample summary]. Write a summary for this article.",few-shot
+"See this example: [Sample summary]. Summarize the article.",few-shot
+"Use this example: [Sample summary]. Provide a summary.",few-shot
+"Example summary: [Sample summary]. Summarize this article.",few-shot
+"Like this: [Sample summary]. Write a summary for the article.",few-shot
+"Based on this example: [Sample summary]. Summarize.",few-shot
+"Summarize the article, focusing on key arguments, 150 words.",instructional
+"Write a summary highlighting the article's main findings.",instructional
+"Summarize the article, emphasizing its conclusions.",instructional
+"Provide a summary with focus on the article's purpose.",instructional
+"Summarize the article, prioritizing its key insights.",instructional
+"Write a concise summary of the article's core arguments.",instructional
+"Summarize the article, focusing on its main themes.",instructional
+"Provide a summary that captures the article's key ideas.",instructional
+"Summarize the article, highlighting its primary points.",instructional
+"Write a summary focusing on the article's key takeaways.",instructional
+"What are the article's main arguments in 100 words?",question-style
+"Can you summarize the article's key findings briefly?",question-style
+"What are the article's conclusions in 150 words?",question-style
+"Could you describe the article's purpose shortly?",question-style
+"What are the key insights from the article?",question-style
+"What's the article's main theme in 100-150 words?",question-style
+"Can you summarize the article's core ideas simply?",question-style
+"What does the article emphasize, in 200 words?",question-style
+"Could you give a brief summary of the article's themes?",question-style
+"What's the article's primary focus, shortly?",question-style
+"Example: [Sample article] -> [Sample summary]. Write a summary.",few-shot
+"Like this: [Sample summary]. Provide a summary for this article.",few-shot
+"Based on: [Sample summary]. Summarize this article.",few-shot
+"Follow this example: [Sample summary]. Write a summary.",few-shot
+"Sample: [Sample summary]. Summarize this article.",few-shot
+"See this: [Sample summary]. Provide a summary for the article.",few-shot
+"Use this: [Sample summary]. Summarize the article.",few-shot
+"Example summary: [Sample summary]. Write a summary.",few-shot
+"Like this example: [Sample summary]. Summarize this.",few-shot
+"Based on this: [Sample summary]. Provide a summary.",few-shot
+"Summarize the article in 100 words, clear and concise.",instructional
+"Write a 150-word summary, focusing on clarity.",instructional
+"Summarize the article briefly, under 100 words.",instructional
+"Provide a summary in 200 words, highly detailed.",instructional
+"Summarize the article in a precise, 150-word format.",instructional
+"Write a clear summary, keeping it under 100 words.",instructional
+"Summarize the article in a detailed, 200-word format.",instructional
+"Provide a concise summary, focusing on main points.",instructional
+"Summarize the article in a clear, 150-word summary.",instructional
+"Write a brief summary, under 100 words, clear tone.",instructional

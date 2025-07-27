@@ -1,0 +1,13 @@
+IP Address,Port,Service,Severity,Vulnerabilities
+192.168.1.5,445,SMB,High,"SMB share open (potential unauthenticated access)"
+192.168.1.5,139,NetBIOS,Low,"No specific vulnerability check implemented"
+192.168.1.5,135,MS RPC,Low,"No specific vulnerability check implemented"
+192.168.1.2,80,HTTP,Medium,"HTTP server leaks info: TP-LINK HTTPD/1.0"
+192.168.1.2,22,SSH,Medium,"SSH open, version: SSH-2.0-dropbear_2012.55"
+192.168.1.3,8080,HTTP-Alt,Low,"HTTP server not accessible"
+192.168.1.3,445,SMB,High,"SMB share open (potential unauthenticated access)"
+192.168.1.3,135,MS RPC,Low,"No specific vulnerability check implemented"
+192.168.1.3,139,NetBIOS,Low,"No specific vulnerability check implemented"
+192.168.1.1,53,DNS,Low,"No specific vulnerability check implemented"
+192.168.1.1,443,HTTPS,Low,"SSL check failed: [SSL: UNSAFE_LEGACY_RENEGOTIATION_DISABLED] unsafe legacy renegotiation disabled (_ssl.c:1147)"
+192.168.1.1,80,HTTP,Low,"No HTTP server info leaked"

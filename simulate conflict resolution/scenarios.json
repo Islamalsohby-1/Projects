@@ -1,0 +1,302 @@
+[
+    {
+        "id": 1,
+        "title": "Workplace Conflict: Project Deadline Dispute",
+        "background": "You're a project manager. Your team is behind on a critical project due in one week. Sarah, the lead developer, insists on adding new features, while Tom, the QA lead, wants to focus on testing existing code.",
+        "characters": "You (Project Manager), Sarah (Lead Developer), Tom (QA Lead)",
+        "conflicting_goals": "Sarah wants innovative features to impress clients; Tom wants a stable product to avoid bugs.",
+        "steps": [
+            {
+                "description": "In a team meeting, Sarah pushes for new features, while Tom argues for stability. How do you respond?",
+                "options": [
+                    {
+                        "text": "Side with Sarah: Prioritize new features to meet client expectations.",
+                        "feedback": "Sarah is pleased, but Tom warns that untested features may cause delays. The team feels divided.",
+                        "next": [
+                            {
+                                "description": "The team adds features but misses the deadline due to bugs. The client is unhappy. What now?",
+                                "options": [
+                                    {
+                                        "text": "Apologize to the client and promise a patch.",
+                                        "feedback": "The client accepts but trust is damaged.",
+                                        "outcome": "Compromised: Project delivered late with reduced client satisfaction.",
+                                        "reflection": "What would you do differently to balance innovation and stability?"
+                                    },
+                                    {
+                                        "text": "Push the team to work overtime to fix bugs.",
+                                        "feedback": "The team is stressed, and morale drops, but the project is delivered.",
+                                        "outcome": "Resolved: Project delivered, but team burnout is a risk.",
+                                        "reflection": "What would you do differently to manage team workload?"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "text": "Side with Tom: Focus on testing for a stable release.",
+                        "feedback": "Tom is relieved, but Sarah feels her ideas are ignored. The client receives a stable product but misses new features.",
+                        "next": [
+                            {
+                                "description": "The client appreciates the stable product but asks about missing features. How do you respond?",
+                                "options": [
+                                    {
+                                        "text": "Promise to add features in the next release.",
+                                        "feedback": "The client is satisfied with the plan.",
+                                        "outcome": "Resolved peacefully: Stable product delivered, with a plan for future features.",
+                                        "reflection": "What would you do differently to incorporate some of Sarah's ideas?"
+                                    },
+                                    {
+                                        "text": "Explain the focus was on quality, not features.",
+                                        "feedback": "The client understands but is slightly disappointed.",
+                                        "outcome": "Compromised: Stable product delivered, but client expectations not fully met.",
+                                        "reflection": "What would you do differently to align with client expectations?"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "title": "Family Conflict: Vacation Planning",
+        "background": "You're planning a family vacation. Your spouse wants a relaxing beach trip, while your teenage kids want an adventure park.",
+        "characters": "You, Spouse, Teenage Kids",
+        "conflicting_goals": "Spouse wants relaxation; kids want excitement.",
+        "steps": [
+            {
+                "description": "During dinner, your spouse suggests a quiet beach resort, but the kids insist on an adventure park. How do you mediate?",
+                "options": [
+                    {
+                        "text": "Propose a beach trip with some adventure activities nearby.",
+                        "feedback": "The family agrees to compromise, but the kids are less enthusiastic.",
+                        "next": [
+                            {
+                                "description": "The vacation goes well, but the kids feel the adventure activities are limited. What do you do?",
+                                "options": [
+                                    {
+                                        "text": "Plan a day trip to a nearby adventure park.",
+                                        "feedback": "The kids are thrilled, and the family bonds.",
+                                        "outcome": "Resolved peacefully: Everyone enjoys the vacation.",
+                                        "reflection": "What would you do differently to balance everyone's needs from the start?"
+                                    },
+                                    {
+                                        "text": "Stick to the original plan to keep costs low.",
+                                        "feedback": "The kids feel disappointed but enjoy the beach.",
+                                        "outcome": "Compromised: Vacation is pleasant but not ideal for kids.",
+                                        "reflection": "What would you do differently to address the kids' desires?"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "text": "Choose the adventure park to please the kids.",
+                        "feedback": "The kids are excited, but your spouse feels ignored and stressed.",
+                        "next": [
+                            {
+                                "description": "Your spouse is unhappy during the trip and withdraws. How do you handle it?",
+                                "options": [
+                                    {
+                                        "text": "Arrange a spa day for your spouse.",
+                                        "feedback": "Your spouse appreciates the gesture, and the trip improves.",
+                                        "outcome": "Resolved: Family enjoys the vacation with adjustments.",
+                                        "reflection": "What would you do differently to include your spouse's needs earlier?"
+                                    },
+                                    {
+                                        "text": "Ignore the issue, hoping it resolves itself.",
+                                        "feedback": "Tension persists, affecting the trip.",
+                                        "outcome": "Escalated: Vacation is strained, with unresolved tension.",
+                                        "reflection": "What would you do differently to prevent tension?"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "title": "Team Conflict: Sports Team Strategy",
+        "background": "You're the coach of a school soccer team. Star player Alex wants to play aggressively, while veteran player Jamie prefers a defensive strategy.",
+        "characters": "You (Coach), Alex (Star Player), Jamie (Veteran Player)",
+        "conflicting_goals": "Alex wants to score more; Jamie wants to prevent goals.",
+        "steps": [
+            {
+                "description": "During practice, Alex pushes for an offensive strategy, while Jamie argues for defense. How do you decide?",
+                "options": [
+                    {
+                        "text": "Balance both: Use an offensive formation but strengthen defense.",
+                        "feedback": "The team tries the balanced approach, but players are unsure of their roles.",
+                        "next": [
+                            {
+                                "description": "The team wins narrowly but lacks cohesion. How do you improve?",
+                                "options": [
+                                    {
+                                        "text": "Hold a team meeting to clarify roles.",
+                                        "feedback": "The team aligns and performs better.",
+                                        "outcome": "Resolved peacefully: Team improves and wins consistently.",
+                                        "reflection": "What would you do differently to ensure cohesion earlier?"
+                                    },
+                                    {
+                                        "text": "Continue with the same strategy.",
+                                        "feedback": "The team struggles with inconsistent performance.",
+                                        "outcome": "Compromised: Team wins some games but lacks unity.",
+                                        "reflection": "What would you do differently to build team unity?"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "text": "Go with Alex's aggressive strategy.",
+                        "feedback": "The team scores but concedes many goals, losing games.",
+                        "next": [
+                            {
+                                "description": "The team is demoralized after losses. How do you recover?",
+                                "options": [
+                                    {
+                                        "text": "Switch to a balanced strategy and rebuild morale.",
+                                        "feedback": "The team regains confidence and improves.",
+                                        "outcome": "Resolved: Team recovers and performs well.",
+                                        "reflection": "What would you do differently to avoid early losses?"
+                                    },
+                                    {
+                                        "text": "Push harder on offense to outscore opponents.",
+                                        "feedback": "The team continues to lose, and morale worsens.",
+                                        "outcome": "Escalated: Team morale collapses, and performance suffers.",
+                                        "reflection": "What would you do differently to balance strategy?"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 4,
+        "title": "School Conflict: Group Project Roles",
+        "background": "You're in a school group project. Emma wants to lead and assign tasks, while Liam prefers everyone to have equal roles.",
+        "characters": "You (Student), Emma (Ambitious Leader), Liam (Team Player)",
+        "conflicting_goals": "Emma wants control; Liam wants equality.",
+        "steps": [
+            {
+                "description": "In a group meeting, Emma assigns herself as leader, but Liam objects, wanting shared roles. How do you mediate?",
+                "options": [
+                    {
+                        "text": "Suggest a rotating leadership role.",
+                        "feedback": "The group agrees, but Emma feels her skills are underused.",
+                        "next": [
+                            {
+                                "description": "The project progresses, but Emma is less engaged. How do you proceed?",
+                                "options": [
+                                    {
+                                        "text": "Give Emma a key task to leverage her skills.",
+                                        "feedback": "Emma re-engages, and the project succeeds.",
+                                        "outcome": "Resolved peacefully: Project is successful with teamwork.",
+                                        "reflection": "What would you do differently to engage Emma earlier?"
+                                    },
+                                    {
+                                        "text": "Maintain the rotating roles strictly.",
+                                        "feedback": "Emma disengages, and the project is average.",
+                                        "outcome": "Compromised: Project completed but not outstanding.",
+                                        "reflection": "What would you do differently to maximize Emma's contribution?"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "text": "Support Emma as the leader.",
+                        "feedback": "Emma takes charge, but Liam feels sidelined and contributes less.",
+                        "next": [
+                            {
+                                "description": "The project is strong but lacks Liam's input. How do you fix it?",
+                                "options": [
+                                    {
+                                        "text": "Encourage Liam to take on a significant role.",
+                                        "feedback": "Liam contributes, and the project improves.",
+                                        "outcome": "Resolved: Project succeeds with balanced contributions.",
+                                        "reflection": "What would you do differently to include Liam earlier?"
+                                    },
+                                    {
+                                        "text": "Let Emma continue leading alone.",
+                                        "feedback": "The project is good but misses diverse input.",
+                                        "outcome": "Compromised: Project completed but lacks team input.",
+                                        "reflection": "What would you do differently to foster collaboration?"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 5,
+        "title": "Workplace Conflict: Office Space Allocation",
+        "background": "You're an office manager. Two teams, Marketing and Sales, are competing for a larger office space to accommodate new hires.",
+        "characters": "You (Office Manager), Marketing Team Lead, Sales Team Lead",
+        "conflicting_goals": "Marketing wants space for creative collaboration; Sales wants it for client meetings.",
+        "steps": [
+            {
+                "description": "In a meeting, both teams argue for the larger space. How do you decide?",
+                "options": [
+                    {
+                        "text": "Split the space evenly between teams.",
+                        "feedback": "Both teams accept but are not fully satisfied with the limited space.",
+                        "next": [
+                            {
+                                "description": "The teams adapt but complain about cramped conditions. What next?",
+                                "options": [
+                                    {
+                                        "text": "Rearrange the office for shared flexible spaces.",
+                                        "feedback": "Both teams appreciate the flexibility and collaborate better.",
+                                        "outcome": "Resolved peacefully: Teams share space effectively.",
+                                        "reflection": "What would you do differently to address space needs earlier?"
+                                    },
+                                    {
+                                        "text": "Maintain the split and monitor usage.",
+                                        "feedback": "Tensions persist, affecting morale.",
+                                        "outcome": "Compromised: Teams work but remain dissatisfied.",
+                                        "reflection": "What would you do differently to improve team satisfaction?"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "text": "Give the space to Sales for client meetings.",
+                        "feedback": "Sales is happy, but Marketing feels neglected and morale drops.",
+                        "next": [
+                            {
+                                "description": "Marketing struggles with limited space, impacting creativity. How do you respond?",
+                                "options": [
+                                    {
+                                        "text": "Allocate a smaller creative hub for Marketing.",
+                                        "feedback": "Marketing regains motivation, and both teams function well.",
+                                        "outcome": "Resolved: Both teams have functional spaces.",
+                                        "reflection": "What would you do differently to balance needs initially?"
+                                    },
+                                    {
+                                        "text": "Ignore Marketing's complaints to prioritize Sales.",
+                                        "feedback": "Marketing's productivity drops, causing tension.",
+                                        "outcome": "Escalated: Office morale suffers, and productivity declines.",
+                                        "reflection": "What would you do differently to prevent morale issues?"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+]

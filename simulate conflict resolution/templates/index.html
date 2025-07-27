@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conflict Resolution Simulator</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; padding: 20px; background-color: #f4f4f4; }
+        .container { display: flex; flex-wrap: wrap; gap: 20px; max-width: 1200px; margin: auto; }
+        .left-panel, .right-panel { flex: 1; min-width: 300px; background: white; padding: 20px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+        .bottom-panel { width: 100%; text-align: center; margin-top: 20px; }
+        h1, h2, h3 { color: #333; }
+        button { padding: 10px 20px; margin: 5px; background-color: #007bff; color: white; border: none; border-radius: 5px; cursor: pointer; }
+        button:hover { background-color: #0056b3; }
+        .option-btn { width: 100%; text-align: left; }
+        textarea { width: 100%; height: 100px; margin-top: 10px; }
+        @media (max-width: 600px) { .container { flex-direction: column; } }
+    </style>
+</head>
+<body>
+    <h1>Conflict Resolution Simulator</h1>
+    <div class="container">
+        <div class="left-panel">
+            <h2 id="scenario-title"></h2>
+            <p><strong>Background:</strong> <span id="background"></span></p>
+            <p><strong>Characters:</strong> <span id="characters"></span></p>
+            <p><strong>Conflicting Goals:</strong> <span id="conflicting-goals"></span></p>
+            <h3>Current Scenario</h3>
+            <p id="description"></p>
+            <h3>Options</h3>
+            <div id="options"></div>
+        </div>
+        <div class="right-panel">
+            <h3>Feedback/Outcome</h3>
+            <p id="feedback"></p>
+            <p id="outcome" style="font-weight: bold;"></p>
+            <div id="reflection" style="display: none;">
+                <h3>Reflection</h3>
+                <p id="reflection-text"></p>
+                <textarea id="reflection-input" placeholder="What would you do differently?"></textarea>
+            </div>
+        </div>
+    </div>
+    <div class="bottom-panel">
+        <button onclick="startOver()">Start Over</button>
+        <button onclick="tryAnother()">Try Another Scenario</button>
+    </div>
+
+    <script>
+        let currentScenario = null;
+        let choicePath = [];
+
+        async function loadScenario(scenarioId) {
+            const response = await fetch(`/scenario/${scenarioId}`);
+            currentScenario = await response.json();
+            choicePath = [];
+            updateUI(currentScenario, currentScenario.steps);
+        }
+
+        function updateUI(scenario, step) {
+            document.getElementById('scenario-title').textContent = scenario.title;
+            document.getElementById('background').textContent = scenario.background;
+            document.getElementById('characters').textContent = scenario.characters;
+            document.getElementById('conflicting-goals').textContent = scenario.conflicting_goals;
+            document.getElementById('description').textContent = step.description;
+            const optionsDiv = document.getElementById('options');
+            optionsDiv.innerHTML = '';
+            if (step.options) {
+                step.options.forEach((option, index) => {
+                    const btn = document.createElement('button');
+                    btn.className = 'option-btn';
+                    btn.textContent = option.text;
+                    btn.onclick = () => makeChoice(index);
+                    optionsDiv.appendChild(btn);
+                });
+            }
+            document.getElementById('feedback').textContent = '';
+            document.getElementById('outcome').textContent = '';
+            document.getElementById('reflection').style.display = 'none';
+        }
+
+        async function makeChoice(optionIndex) {
+            choicePath.push(optionIndex);
+            const response = await fetch('/choice', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+                body: `scenario_id=${currentScenario.id - 1}&choice_id=${choicePath.join('.')}`
+            });
+            const result = await response.json();
+            document.getElementById('feedback').textContent = result.feedback || '';
+            document.getElementById('outcome').textContent = result.outcome || '';
+            if (result.outcome) {
+                document.getElementById('reflection-text').textContent = result.reflection || '';
+                document.getElementById('reflection').style.display = 'block';
+            } else {
+                document.getElementById('description').textContent = result.description;
+                const optionsDiv = document.getElementById('options');
+                optionsDiv.innerHTML = '';
+                result.options.forEach((option, index) => {
+                    const btn = document.createElement('button');
+                    btn.className = 'option-btn';
+                    btn.textContent = option.text;
+                    btn.onclick = () => makeChoice(index);
+                    optionsDiv.appendChild(btn);
+                });
+            }
+        }
+
+        function startOver() {
+            updateUI(currentScenario, currentScenario.steps);
+            choicePath = [];
+        }
+
+        function tryAnother() {
+            const scenarios = {{ scenarios|tojson }};
+            const randomScenario = scenarios[Math.floor(Math.random() * scenarios.length)];
+            loadScenario(randomScenario.id - 1);
+        }
+
+        // Load first scenario on page load
+        window.onload = () => loadScenario(0);
+    </script>
+</body>
+</html>
