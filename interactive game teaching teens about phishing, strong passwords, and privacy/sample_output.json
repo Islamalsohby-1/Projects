@@ -1,0 +1,29 @@
+{
+    "phishing_challenge": [
+      {
+        "question": "Subject: Urgent Account Verification\nDear User, your account will be suspended unless you verify your details at [link].",
+        "answer": "Yes",
+        "correct": true,
+        "explanation": "Suspicious link and urgent tone are common phishing tactics."
+      },
+      {
+        "question": "Subject: Meeting Reminder\nHi, don't forget our team meeting tomorrow at 10 AM.",
+        "answer": "No",
+        "correct": true,
+        "explanation": "Legitimate emails from known contacts are usually safe."
+      }
+    ],
+    "password_strength": {
+      "password": "P@ssw0rd123!",
+      "score": 4,
+      "feedback": "Great! Add unique characters for max strength."
+    },
+    "privacy_quiz": [
+      {
+        "scenario": "You get a friend request on social media from someone you don't know. What should you do?",
+        "answer": "Ignore it",
+        "correct": true,
+        "explanation": "Unknown friend requests can lead to data harvesting."
+      }
+    ]
+  }

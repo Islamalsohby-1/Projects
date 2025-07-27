@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tweet Sentiment Analysis</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 40px; }
+        .container { max-width: 800px; margin: auto; }
+        textarea { width: 100%; height: 100px; margin: 10px 0; }
+        .result { margin-top: 20px; padding: 10px; border: 1px solid #ccc; }
+        button { padding: 10px 20px; background: #007bff; color: white; border: none; cursor: pointer; }
+        button:hover { background: #0056b3; }
+        a { color: #007bff; text-decoration: none; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Tweet Sentiment Analysis</h1>
+        <p>Model Accuracy: {{ "%.2f" % (accuracy * 100) }}%</p>
+        <form method="POST" action="/predict">
+            <textarea name="tweet" placeholder="Enter a tweet..."></textarea>
+            <button type="submit">Analyze Sentiment</button>
+        </form>
+        {% if prediction %}
+        <div class="result">
+            <p><strong>Tweet:</strong> {{ tweet }}</p>
+            <p><strong>Sentiment:</strong> {{ prediction }}</p>
+        </div>
+        {% endif %}
+        <p><a href="/test">View Sample Predictions</a></p>
+    </div>
+</body>
+</html>

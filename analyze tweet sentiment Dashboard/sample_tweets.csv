@@ -1,0 +1,11 @@
+text,sentiment
+"I love this movie, it's amazing! #happy",positive
+"Terrible service, very disappointed 😞",negative
+"Just okay, nothing special about it",neutral
+"Wow, fantastic experience! Highly recommend",positive
+"Worst day ever, everything went wrong",negative
+"Pretty good, could be better though",neutral
+This is so cool! #awesome,positive
+"Not impressed, quite boring",negative
+Absolutely wonderful time!,positive
+"Really bad product, waste of money",negative

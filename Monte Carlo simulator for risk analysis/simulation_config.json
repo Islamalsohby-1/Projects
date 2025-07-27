@@ -1,0 +1,10 @@
+{
+    "initial_investment": 100000,
+    "expected_return_stock": 0.08,
+    "volatility_stock": 0.15,
+    "expected_return_bond": 0.04,
+    "volatility_bond": 0.05,
+    "stock_allocation": 0.6,
+    "num_simulations": 10000,
+    "time_horizon": 1
+}

@@ -1,0 +1,8 @@
+{
+    "type": "test",
+    "index": 7,
+    "details": {
+        "field1": "value1",
+        "field2": "value2"
+    }
+}

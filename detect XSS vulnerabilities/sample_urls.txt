@@ -1,0 +1,5 @@
+http://example.com
+http://testphp.vulnweb.com
+http://testasp.vulnweb.com
+http://demo.testfire.net
+http://xss-game.appspot.com

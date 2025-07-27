@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sample Tweet Predictions</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 40px; }
+        .container { max-width: 800px; margin: auto; }
+        table { width: 100%; border-collapse: collapse; margin-top: 20px; }
+        th, td { border: 1px solid #ccc; padding: 10px; text-align: left; }
+        th { background: #f8f8f8; }
+        a { color: #007bff; text-decoration: none; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Sample Tweet Predictions</h1>
+        <p>Model Accuracy: {{ "%.2f" % (accuracy * 100) }}%</p>
+        <table>
+            <tr>
+                <th>Tweet</th>
+                <th>Predicted Sentiment</th>
+            </tr>
+            {% for tweet, prediction in predictions %}
+            <tr>
+                <td>{{ tweet }}</td>
+                <td>{{ prediction }}</td>
+            </tr>
+            {% endfor %}
+        </table>
+        <p><a href="/">Back to Home</a></p>
+    </div>
+</body>
+</html>
